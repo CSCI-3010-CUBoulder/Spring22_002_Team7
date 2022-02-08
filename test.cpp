@@ -4,6 +4,6 @@
 #include <vector>
 
 TEST_CASE("Sign is correct", "[Sign]"){
-    REQUIRE(Sign(0)==1);
-    REQUIRE(Sign(-1)==-1);
+    REQUIRE(Sign(0.0)==1.0);
+    REQUIRE(Sign(-1.0)==-1.0);
 }
