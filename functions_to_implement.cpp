@@ -1,3 +1,6 @@
+#include <vector>
+#include <iostream>
+#include <string>
 /* String functions section */
 
 // Splits a single string on separator into a vector of strings
@@ -31,7 +34,8 @@ std::vector<bool> OddMask(std::vector<int>);
 
 // Sums all numbers in a vector and returns the resulting value
 int Sum(std::vector<int> nums);
-
+    // int ans = 0;
+    // for(int i = 0; i )
 // Multiplies all numbers in a vector together and returns the resulting value
 int Product(std::vector<int> nums);
 
@@ -52,7 +56,21 @@ std::vector<int> SquaresUntil(int n);
 int NthFibonacci(int n);
 
 // takes an int, n, and returns the factorial of that int (n!)
-int Factorial(int n);
+int Factorial(int n){
+
+    // if (n < 0)
+    //     cout << "Facotrial has to be equal to or greater than 0.";
+    //     return
+    if else (n == 0){
+        return 1;
+    }
+    else {
+        for(int i = 0; i <= n; ++i) {
+            Factorial *= i;
+        }
+        return Factorial;  
+    }
+}
 
 // returns -1 if the number is negative and 1 if positive
 int Sign(int num);
@@ -81,6 +99,13 @@ double Sum(std::vector<double> nums);
 
 // Multiplies all numbers in a vector together and returns the resulting value
 double Product(std::vector<double> nums);
+{
+    double ans = 0.0;
+    for(int i = 0; i <= nums.size(); i++){
+        ans *= nums[i];
+    }
+    return ans;
+}
 
 // Adds an double n to each element of a given vector
 std::vector<double> VectorPlusN(std::vector<double> v, double n);
