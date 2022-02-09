@@ -96,7 +96,7 @@ double Sum(std::vector<double> nums);
 double Product(std::vector<double> nums)
 {
     double ans = 0.0;
-    for(int i = 0; i <= nums.size(); i++){
+    for(int i = 0; i < nums.size(); i++){
         ans *= nums[i];
     }
     return ans;
