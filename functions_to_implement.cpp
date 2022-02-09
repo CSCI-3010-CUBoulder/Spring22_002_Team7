@@ -61,15 +61,10 @@ int Factorial(int n){
     // if (n < 0)
     //     cout << "Facotrial has to be equal to or greater than 0.";
     //     return
-    if else (n == 0){
-        return 1;
-    }
-    else {
-        for(int i = 0; i <= n; ++i) {
-            Factorial *= i;
-        }
-        return Factorial;  
-    }
+        if ((n==0)||(n==1))
+   return 1;
+        else
+   return n*Factorial(n-1);
 }
 
 // returns -1 if the number is negative and 1 if positive
@@ -98,7 +93,7 @@ std::vector<bool> LessMask(std::vector<int> nums, int less_than);
 double Sum(std::vector<double> nums);
 
 // Multiplies all numbers in a vector together and returns the resulting value
-double Product(std::vector<double> nums);
+double Product(std::vector<double> nums)
 {
     double ans = 0.0;
     for(int i = 0; i <= nums.size(); i++){
